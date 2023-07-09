@@ -9,7 +9,7 @@ async function run() {
       body: JSON.stringify({
         title: process.env.LAWG_TITLE,
         description: process.env.LAWG_DESCRIPTION,
-        icon: process.env.LAWG_ICON,
+        emoji: process.env.LAWG_EMOJI,
         notify: process.env.LAWG_NOTIFY,
       }),
       headers: {

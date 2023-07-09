@@ -28,7 +28,7 @@ inputs:
     description: Event Description
     required: false
 
-  icon:
+  emoji:
     description: Event Emoji
     required: false
 
