@@ -1,0 +1,41 @@
+name: Publish Lawg Event
+description: Send events to Lawg
+
+author: Lawg
+
+branding:
+  color: gray-dark
+  icon: zap
+
+inputs:
+  token:
+    description: Lawg API Token
+    required: true
+
+  project:
+    description: Project Namespace
+    required: true
+
+  feed:
+    description: Project Feed
+    required: true
+
+  title:
+    description: Event Title
+    required: true
+
+  description:
+    description: Event Description
+    required: false
+
+  icon:
+    description: Event Emoji
+    required: false
+
+  notify:
+    description: Send a notification?
+    default: false
+
+runs:
+  using: docker
+  image: Dockerfile
